@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-02T17:06:07 EET" name="Default suite" finished-at="2022-04-02T17:06:19 EET" duration-ms="12562">
+    <groups>
+    </groups>
+    <test started-at="2022-04-02T17:06:07 EET" name="Default test" finished-at="2022-04-02T17:06:19 EET" duration-ms="12562">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setBrowserType(java.lang.String)[pri:0, instance:tests.LoginTest@6cb107fd]" started-at="2022-04-02T17:06:07 EET" name="setBrowserType" finished-at="2022-04-02T17:06:19 EET" duration-ms="12264" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[inStream parameter is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: inStream parameter is null
+at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+at java.base/java.util.Properties.load(Properties.java:407)
+at utilities.readers.PropertiesReader.getPropertyUsingKey(PropertiesReader.java:21)
+at utilities.ConfigUtil.loadTestConfigurations(ConfigUtil.java:12)
+at utilities.TestBase.launchBrowser(TestBase.java:52)
+at utilities.TestBase.setBrowserType(TestBase.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowserType -->
+        <test-method signature="login()[pri:0, instance:tests.LoginTest@6cb107fd]" started-at="2022-04-02T17:06:19 EET" name="login" finished-at="2022-04-02T17:06:19 EET" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[inStream parameter is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: inStream parameter is null
+at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+at java.base/java.util.Properties.load(Properties.java:407)
+at utilities.readers.PropertiesReader.getPropertyUsingKey(PropertiesReader.java:21)
+at utilities.ConfigUtil.loadTestConfigurations(ConfigUtil.java:12)
+at utilities.TestBase.launchBrowser(TestBase.java:52)
+at utilities.TestBase.setBrowserType(TestBase.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tackeScreenShot()[pri:0, instance:tests.LoginTest@6cb107fd]" started-at="2022-04-02T17:06:19 EET" name="tackeScreenShot" finished-at="1970-01-01T02:00:00 EET" duration-ms="-1648911979716" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tackeScreenShot -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.LoginTest@6cb107fd]" started-at="2022-04-02T17:06:19 EET" name="quitDriver" finished-at="1970-01-01T02:00:00 EET" duration-ms="-1648911979720" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
